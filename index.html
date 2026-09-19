@@ -1,10 +1,183 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cesanese — Vigne, territori, persone."><title>Cesanese — Vigne, territori, persone</title><link rel="stylesheet" href="style.css"></head><body>
-<header><a class="brand" href="#home"><b>CESANESE</b><small>Vigne, territori, persone</small></a><nav><a href="#cantine">Cantine</a><a href="#territori">Territori</a><a href="#cesanese">Il Cesanese</a><a href="#mappa">Mappa</a><a href="#esperienze">Esperienze</a></nav></header>
-<main id="home"><section class="hero"><div><p class="eyebrow">LA GUIDA DIGITALE</p><h1>Cesanese</h1><h2>Vigne, territori, persone.</h2><p class="lead">Un progetto per conoscere il Cesanese attraverso i luoghi in cui nasce, le cantine che lo interpretano e le persone che ne custodiscono la storia.</p><a class="btn" href="#cantine">Esplora le cantine</a></div><div class="hero-img"><span>CESANESE</span><small>Affile · Olevano Romano · Piglio</small></div></section>
-<section class="section"><p class="eyebrow">UN TERRITORIO, MOLTE STORIE</p><h2>Il Cesanese non è soltanto un vino.</h2><p class="lead">È un paesaggio, una memoria agricola, una comunità di produttori e una pluralità di interpretazioni.</p></section>
-<section id="territori" class="section"><p class="eyebrow">I TERRITORI</p><h2>Tre luoghi, tre identità.</h2><div class="cards"><article><i>01</i><h3>Affile</h3><p>Il Cesanese di Affile e il suo paesaggio collinare d'altitudine.</p></article><article><i>02</i><h3>Olevano Romano</h3><p>Vigneti, suoli e interpretazioni del Cesanese di Olevano Romano.</p></article><article><i>03</i><h3>Piglio</h3><p>Il cuore della denominazione Cesanese del Piglio DOCG.</p></article></div></section>
-<section id="cantine" class="section dark"><div class="head"><div><p class="eyebrow">LE CANTINE</p><h2>Conosci chi produce.</h2></div><span id="counter"></span></div><div class="filters"><input id="search" placeholder="Cerca cantina, comune o vino…"><select id="municipality"><option value="">Tutti i territori</option><option>Affile</option><option>Olevano Romano</option><option>Piglio</option></select></div><div id="grid" class="cards"></div></section>
-<section id="cesanese" class="section split"><div><p class="eyebrow">IL CESANESE</p><h2>Una cultivar, diverse espressioni territoriali.</h2></div><div><p>Il progetto distingue il Cesanese di Affile, il Cesanese di Olevano Romano e il Cesanese del Piglio DOCG, raccontandone storia, disciplinari, altitudini, suoli e pratiche viticole.</p><p class="note">Le informazioni tecniche verranno inserite progressivamente privilegiando fonti istituzionali e ufficiali.</p></div></section>
-<section id="mappa" class="section map"><p class="eyebrow">LA MAPPA</p><h2>Il Cesanese sul territorio.</h2><div class="mapbox"><b>Affile</b><b>Olevano Romano</b><b>Piglio</b><small>Mappa interattiva — prossima fase</small></div></section>
-<section id="esperienze" class="section"><p class="eyebrow">ESPERIENZE</p><h2>Degustare, visitare, camminare.</h2><div class="cards"><article><h3>Degustazioni</h3><p>Esperienze in cantina e incontri con i produttori.</p></article><article><h3>Itinerari</h3><p>Percorsi tra vigne, borghi e paesaggi.</p></article><article><h3>Eventi</h3><p>Appuntamenti dedicati al vino e alla cultura del territorio.</p></article></div></section></main>
-<footer><b>CESANESE</b><span>Vigne, territori, persone.</span><small>Progetto in sviluppo · dati da verificare progressivamente</small></footer><script src="data.js"></script><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Cesanese — Vigne, territori, persone. Una guida digitale al Cesanese e ai suoi territori.">
+  <title>Cesanese — Vigne, territori, persone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">Menu</button>
+  <a class="brand" href="#home"><b>CESANESE</b><small>Vigne, territori, persone</small></a>
+  <nav class="main-nav" aria-label="Navigazione principale">
+    <a href="#cantine">Cantine</a><a href="#territori">Territori</a><a href="#cesanese">Il Cesanese</a><a href="#mappa">Mappa</a><a href="#esperienze">Esperienze</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="hero hero-v2">
+    <div class="hero-copy">
+      <p class="eyebrow">LA GUIDA DIGITALE</p>
+      <h1>Cesanese</h1>
+      <h2>Vigne, territori,<br>persone.</h2>
+      <p class="lead">Una guida digitale per conoscere il Cesanese attraverso i luoghi in cui nasce, le cantine che lo interpretano e le persone che ne custodiscono la storia.</p>
+      <a class="btn" href="#territori">Esplora il territorio <span>↓</span></a>
+    </div>
+    <figure class="hero-photo">
+      <img src="https://www.italysfinestwines.it/wp-content/uploads/2020/11/vini-del-lazio-696x418.jpg" alt="Paesaggio di vigneti del Lazio al tramonto">
+      <figcaption><b>CESANESE</b><span>Affile · Olevano Romano · Piglio</span></figcaption>
+    </figure>
+  </section>
+
+  <section class="manifesto section-tight">
+    <div>
+      <p class="eyebrow">UN TERRITORIO, MOLTE STORIE</p>
+      <h2>Il Cesanese non è soltanto un vino.</h2>
+    </div>
+    <p class="manifesto-text">È un paesaggio, una memoria agricola, una comunità di produttori e una pluralità di interpretazioni.</p>
+  </section>
+
+  <section id="territori" class="section territories-v22">
+    <div class="territories-intro">
+      <p class="eyebrow">I TERRITORI</p>
+      <div class="section-heading">
+        <h2>Tre luoghi,<br>tre identità.</h2>
+        <p>Il Cesanese cambia voce quando cambia il paesaggio. Affile, Olevano Romano e Piglio raccontano tre modi di vivere la vigna e il territorio.</p>
+      </div>
+    </div>
+
+    <div class="territory-photo-grid">
+      <article class="territory-photo-card">
+        <a href="#cesanese" aria-label="Scopri Affile">
+          <figure>
+            <img src="https://administrator.ablaweb.net/_backup/pachamama-adventure.it/fck/35686876_469974823423568_5999397979058864128_n.jpg"
+                 alt="Vigneti collinari nell'area di Affile e Piglio">
+            <figcaption>
+              <span class="territory-number">01</span>
+              <div>
+                <h3>Affile</h3>
+                <p>Il Cesanese di Affile e il paesaggio collinare d'altitudine.</p>
+              </div>
+              <b>Scopri →</b>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article class="territory-photo-card">
+        <a href="#cesanese" aria-label="Scopri Olevano Romano">
+          <figure>
+            <img src="https://static.gamberorosso.it/2025/09/vigne-cesanese-olevano-romano.jpg.webp"
+                 alt="Filari di Cesanese nelle colline di Olevano Romano">
+            <figcaption>
+              <span class="territory-number">02</span>
+              <div>
+                <h3>Olevano Romano</h3>
+                <p>Vigneti, colline e interpretazioni del Cesanese di Olevano Romano.</p>
+              </div>
+              <b>Scopri →</b>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+
+      <article class="territory-photo-card">
+        <a href="#cesanese" aria-label="Scopri Piglio">
+          <figure>
+            <img src="https://cdn0.matrimonio.com/vendor/0441/3_2/960/jpg/es-18_2_220441.jpeg"
+                 alt="Paesaggio viticolo di Piglio">
+            <figcaption>
+              <span class="territory-number">03</span>
+              <div>
+                <h3>Piglio</h3>
+                <p>Il cuore della denominazione Cesanese del Piglio DOCG.</p>
+              </div>
+              <b>Scopri →</b>
+            </figcaption>
+          </figure>
+        </a>
+      </article>
+    </div>
+
+    <p class="image-note">Fotografie di prova — saranno sostituite con immagini del territorio con fonte e diritti verificati.</p>
+  </section>
+
+  <section id="cesanese" class="section cesanese-v23">
+    <div class="cesanese-hero-text">
+      <div class="section-heading">
+        <div><p class="eyebrow">IL CESANESE</p><h2>Una cultivar,<br><em>diverse espressioni.</em></h2></div>
+        <p>Il Cesanese è un vitigno a bacca nera profondamente legato al Lazio. La sua storia non coincide con una sola denominazione: cambia il paesaggio, cambiano le regole produttive e cambiano le espressioni del vino.</p>
+      </div>
+    </div>
+
+    <div class="cesanese-manifesto">
+      <div class="cesanese-bigword">CESANESE</div>
+      <div class="cesanese-manifesto-copy">
+        <p class="eyebrow">UN PATRIMONIO DA LEGGERE</p>
+        <p>Affile, Olevano Romano e Piglio appartengono allo stesso grande racconto viticolo, ma non sono intercambiabili. Le denominazioni definiscono areali e composizioni ampelografiche differenti; il territorio aggiunge altitudine, suoli, esposizioni, pratiche e tradizioni.</p>
+      </div>
+    </div>
+
+    <div class="cesanese-facts">
+      <article><span>01</span><strong>Vitigno</strong><p>Uva a bacca nera autoctona del Lazio, storicamente coltivata nell'area cesanese.</p></article>
+      <article><span>02</span><strong>Tre denominazioni chiave</strong><p>Cesanese di Affile DOC, Cesanese di Olevano Romano DOC e Cesanese del Piglio DOCG.</p></article>
+      <article><span>03</span><strong>Una storia ancora da studiare</strong><p>Origini ed etimologia non sono definitivamente chiarite: la ricerca continua a indagare biotipi e biodiversità.</p></article>
+    </div>
+
+    <div class="denominations-block">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">LE DENOMINAZIONI</p><h3>Stesso nome,<br>territori differenti.</h3></div>
+        <p>Le differenze non sono soltanto geografiche: i disciplinari stabiliscono anche la base ampelografica e le condizioni con cui il vino può essere presentato sul mercato.</p>
+      </div>
+      <div class="denomination-grid">
+        <article><div class="denom-top"><span>01</span><small>DOC</small></div><h4>Cesanese<br>di Affile</h4><p><b>≥ 90%</b> Cesanese di Affile. La zona comprende Affile, Roiate e parte di Arcinazzo Romano.</p><a href="https://www.gazzettaufficiale.it/" target="_blank" rel="noopener">Disciplinare ufficiale ↗</a></article>
+        <article><div class="denom-top"><span>02</span><small>DOC</small></div><h4>Cesanese<br>di Olevano Romano</h4><p><b>≥ 85%</b> Cesanese di Affile e/o Cesanese comune. La zona comprende Olevano Romano e parte di Genazzano.</p><a href="https://www.gazzettaufficiale.it/" target="_blank" rel="noopener">Disciplinare ufficiale ↗</a></article>
+        <article><div class="denom-top"><span>03</span><small>DOCG</small></div><h4>Cesanese<br>del Piglio</h4><p><b>≥ 90%</b> Cesanese di Affile e/o Cesanese comune. La DOCG è stata riconosciuta nel 2008.</p><a href="https://www.arsial.it/app/uploads/page/cesanese_del_piglio_o_piglio_docg.pdf" target="_blank" rel="noopener">Disciplinare ↗</a></article>
+      </div>
+    </div>
+
+    <div class="cesanese-story">
+      <div><p class="eyebrow">STORIA E RICERCA</p><h3>Un vitigno antico,<br>una storia non ancora chiusa.</h3></div>
+      <div class="story-copy">
+        <p>Il nome Cesanese è antico, ma le sue origini non possono essere ricostruite con certezza. Il CREA segnala diverse ipotesi etimologiche e ricorda la presenza storica del vitigno nel Lazio, in particolare nei territori di Piglio, Olevano Romano e Affile.</p>
+        <p>La ricerca contemporanea sta lavorando anche sulla biodiversità viticola: il progetto dedicato al Cesanese di Olevano Romano ha previsto screening ampelografici, analisi virologiche e genetiche e caratterizzazione di uve, mosti e vini.</p>
+        <div class="source-links"><span>Fonti di riferimento</span><a href="https://www.crea.gov.it/-/alle-radici-della-cultivar-cesanese-di-olevano-romano" target="_blank" rel="noopener">CREA — Alle radici della cultivar Cesanese ↗</a><a href="https://www.crea.gov.it/web/viticoltura-e-enologia/-/attivit%C3%A0-istituzionali" target="_blank" rel="noopener">CREA — Registro nazionale delle varietà di vite ↗</a></div>
+      </div>
+    </div>
+
+    <div class="cesanese-note"><span>IL PRINCIPIO DEL PROGETTO</span><p>Non raccontare un vino come se fosse uguale ovunque. Raccontare come una cultivar diventa territorio.</p></div>
+  </section>
+
+  <section id="cantine" class="section dark">
+    <div class="head"><div><p class="eyebrow">LE CANTINE</p><h2>Conosci chi produce.</h2><p class="section-subtitle">88 produttori, tre territori, molte interpretazioni del Cesanese.</p></div><span id="counter"></span></div>
+    <div class="filters"><input id="search" aria-label="Cerca cantina, comune o vino" placeholder="Cerca cantina, comune o vino…"><select id="municipality" aria-label="Filtra per territorio"><option value="">Tutti i territori</option><option>Affile</option><option>Olevano Romano</option><option>Piglio</option></select></div>
+    <div id="grid" class="cards winery-grid"></div>
+    <a class="btn btn-light" href="#cantine">Esplora le cantine <span>↓</span></a>
+  </section>
+
+  <section id="mappa" class="section map">
+    <div class="section-heading"><div><p class="eyebrow">LA MAPPA</p><h2>Il Cesanese<br>sul territorio.</h2></div><p>Una futura mappa interattiva collegherà produttori, vigne, borghi, esperienze e itinerari.</p></div>
+    <div class="mapbox"><b>Affile</b><b>Olevano Romano</b><b>Piglio</b><small>Mappa interattiva — prossima fase</small></div>
+  </section>
+
+  <section id="esperienze" class="section experiences">
+    <p class="eyebrow">ESPERIENZE</p><div class="section-heading"><h2>Non solo conoscere.<br>Andare a cercarlo.</h2><p>Degustazioni, visite, itinerari ed eventi per incontrare il Cesanese nei suoi luoghi.</p></div>
+    <div class="experience-grid"><article><span>01</span><h3>Degustazioni</h3><p>Esperienze in cantina e incontri con i produttori.</p></article><article><span>02</span><h3>Itinerari</h3><p>Percorsi tra vigne, borghi e paesaggi.</p></article><article><span>03</span><h3>Eventi</h3><p>Appuntamenti dedicati al vino e alla cultura del territorio.</p></article></div>
+  </section>
+</main>
+
+<footer><b>CESANESE</b><span>Vigne, territori, persone.</span><small>Progetto in sviluppo · dati da verificare progressivamente</small></footer>
+<script src="data.js"></script><script src="app.js"></script>
+<script>
+const menuToggle=document.querySelector('.menu-toggle');
+const mainNav=document.querySelector('.main-nav');
+if(menuToggle&&mainNav){
+  menuToggle.addEventListener('click',()=>{
+    const open=mainNav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded',open?'true':'false');
+    menuToggle.textContent=open?'Chiudi':'Menu';
+  });
+}
+</script></body>
+</html>
